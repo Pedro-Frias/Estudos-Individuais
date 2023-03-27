@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+  // 1º maneira de criar array
+  //var cor =new Array();
+  // 2º maneira de criar array
+  var cor = [];
+  // método push:
+  /* cor.push("Preto");
+  cor.push("Branco");
+  cor.push("Vermelho");
+  cor.push("Verde");
+  cor.push("Azul"); */
+
+  cor[0] = "Preto";
+  cor[1] = "Branco";
+  cor[2] = "Vermelho";
+  cor[3] = "Verde";
+  cor[4] = "Azul";
+  //document.write(cor[4]);
+
+  /*  var items = ["Faca", "Pistola", "Chave", "Corda", "Metralhadora",]; */
+  var mochila = [], pos, mochila1 = [], mochila2 = [];
+  /*   var num = [5, 8, 4, 9, 7, 6, 3, 2, 1];
+  
+    num.sort();
+    
+  
+    numeros = num.join();
+  
+    document.write(numeros + "<br>");
+    document.write(num[0] + "<br>");
+    document.write(num[1] + "<br>");
+    document.write(num[2] + "<br>");
+    document.write(num[3] + "<br>");
+    document.write(num[4] + "<br>");
+    document.write(num[5] + "<br>");
+    document.write(num[6] + "<br>");
+    document.write(num[7] + "<br>");
+    document.write(num[8] + "<br>");
+    document.write(num[9] + "<br>");
+   */
+
+  /* mochila.push(0);
+  mochila.push(4);
+  mochila.push(1);
+  //  document.write(mochila[0]);
+  document.write(items[mochila[0]] + "<br>")
+  document.write(items[mochila[1]] + "<br>")
+  document.write(items[mochila[2]] + "<br>") */
+
+
+  mochila1.push("Faca");
+  mochila1.push("Corda");
+  mochila1.push("Chave");
+  mochila1.push("Lanterna");
+  mochila1.push("Pedra");
+  mochila1.unshift("Vidro"); // vai para o começo
+
+  mochila2.push("Arame");
+  mochila2.push("Luvas");
+  mochila2.push("Joelheiras");
+  mochila2.push("Meias");
+  mochila2.push("Moeda");
+  mochila2.push("Canivete");
+
+  mochila = mochila1.concat(mochila2)
+  //mochila.pop();// remove o último
+
+  //mochila.shift(); //remove o primeiro
+
+  /* mochila.splice(2,2); // remove um índice específico
+  
+    document.write(mochila[0]+"<br>");
+    document.write(mochila[1]+"<br>");
+    document.write(mochila[2]+"<br>");
+    document.write(mochila[3]+"<br>");
+    document.write(mochila[4]+"<br>");
+    document.write(mochila[5]+"<br>"); */
+
+  /* 
+    pos = mochila.indexOf("Lanterna");
+  
+    if (pos < 0) {
+      document.write("Item não esta na mochila")
+    } else {
+      document.write("Item está na mochila<br>Posição: " + pos)
+    } */
+
+  document.write(mochila[0] + "<br>")
+  document.write(mochila[1] + "<br>")
+  document.write(mochila[2] + "<br>")
+  document.write(mochila[3] + "<br>")
+  document.write(mochila[4] + "<br>")
+  document.write(mochila[5] + "<br>")
+  document.write(mochila[6] + "<br>")
+  document.write(mochila[7] + "<br>")
+  document.write(mochila[8] + "<br>")
+  document.write(mochila[9] + "<br>")
+  document.write(mochila[10] + "<br>")
+  document.write(mochila[11] + "<br>")
+  document.write(mochila[12] + "<br>")
+
+  mochila2.pop([2]);
+
+  document.write("Tamanho da mochila 1 :" + mochila1.length + "<br>")
+  document.write("Tamanho da mochila 2 :" + mochila2.length + "<br>")
+  document.write("Tamanho da mochila :" + mochila.length + "<br>")
+</script>
